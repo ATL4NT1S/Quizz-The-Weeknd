@@ -48,6 +48,46 @@ const questions = [
         question: "Quel acteur célèbre prête sa voix pour faire le narrateur sur l'album 'Dawn FM' ?",
         options: ["Morgan Freeman", "Samuel L. Jackson", "Jim Carrey", "Denzel Washington"],
         answer: 2
+    },
+    {
+        question: "Quelle langue, en plus de l'anglais, parle-t-il couramment grâce à ses origines éthiopiennes ?",
+        options: ["Le Swahili", "L'Amharique", "Le Somali", "L'Arabe"],
+        answer: 1
+    },
+    {
+        question: "Quel est le nom du comic book que The Weeknd a co-écrit avec Marvel ?",
+        options: ["The Idol", "After Hours", "Starboy", "Blinding Lights"],
+        answer: 2
+    },
+    {
+        question: "De quel film de Martin Scorsese s'est-il principalement inspiré pour le personnage en costume rouge de l'ère 'After Hours' ?",
+        options: ["Les Affranchis", "Taxi Driver", "Casino", "Le Loup de Wall Street"],
+        answer: 2
+    },
+    {
+        question: "Sur quel morceau de Drake de 2011 peut-on entendre l'une de ses premières collaborations majeures ?",
+        options: ["The Zone", "Crew Love", "Practice", "Shot for Me"],
+        answer: 1
+    },
+    {
+        question: "Avant de s'appeler 'The Weeknd', quel était l'un de ses noms de scène ?",
+        options: ["Abel", "The Noise", "Kin Kane", "Tesfaye"],
+        answer: 2
+    },
+    {
+        question: "Quelle a été la toute première chanson qu'il a mise en ligne sur YouTube sous le nom 'The Weeknd' ?",
+        options: ["What You Need", "Loft Music", "The Morning", "Wicked Games"],
+        answer: 0
+    },
+    {
+        question: "Quel est le nom de la station de radio fictive qui rythme l'album 'Dawn FM' ?",
+        options: ["XO 103.5", "After Life Radio", "103.5 Dawn FM", "Heaven or Las Vegas"],
+        answer: 2
+    },
+    {
+        question: "Quelle chanson de Michael Jackson a-t-il reprise pour le 30ème anniversaire de l'album 'Bad' ?",
+        options: ["Thriller", "Billie Jean", "Dirty Diana", "Beat It"],
+        answer: 2
     }
 ];
 
@@ -70,11 +110,20 @@ const feedbackText = document.getElementById('feedback-text');
 startBtn.addEventListener('click', startQuiz);
 restartBtn.addEventListener('click', restartQuiz);
 
+// Fonction pour mélanger un tableau (algorithme de Fisher-Yates)
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
 function startQuiz() {
     startScreen.classList.add('hidden');
     questionScreen.classList.remove('hidden');
     currentQuestionIndex = 0;
     score = 0;
+    shuffleArray(questions); // On mélange les questions ici !
     loadQuestion();
 }
 
@@ -94,9 +143,7 @@ function loadQuestion() {
 }
 
 function resetState() {
-    while (optionsContainer.firstChild) {
-        optionsContainer.removeChild(optionsContainer.firstChild);
-    }
+    optionsContainer.innerHTML = ''; // Méthode plus concise pour vider le conteneur
 }
 
 function selectAnswer(selectedIndex, selectedButton) {
@@ -134,9 +181,9 @@ function showResults() {
     
     if (score === questions.length) {
         feedbackText.innerText = "Parfait ! Tu es un véritable Starboy / Stargirl ! 🌟";
-    } else if (score >= 7) {
+    } else if (score >= questions.length * 0.7) { // Basé sur un pourcentage pour s'adapter au nombre de questions
         feedbackText.innerText = "Excellent ! Le crew XO serait fier de toi. 🩸";
-    } else if (score >= 4) {
+    } else if (score >= questions.length * 0.4) {
         feedbackText.innerText = "Pas mal, mais tu as besoin de réécouter Trilogy ! 🎶";
     } else {
         feedbackText.innerText = "Aïe... Tu étais 'Blinded by the lights' ou quoi ? 🕶️";
