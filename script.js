@@ -1,92 +1,102 @@
 const questions = [
     {
-        question: "Quel est le vrai nom de The Weeknd ?",
-        options: ["Abel Tesfaye", "Aubrey Graham", "Jacques Webster", "Tarik Mengistu"],
+        question: "Quel célèbre morceau de France Gall est samplé sur son titre 'Montréal' ?",
+        options: ["Poupée de cire, poupée de son", "Laisse tomber les filles", "Résiste", "Ella, elle l'a"],
+        answer: 1
+    },
+    {
+        question: "Quelle actrice de la série Squid Game joue à ses côtés dans le clip 'Out of Time' ?",
+        options: ["HoYeon Jung", "Bae Doona", "Kim Joo-ryoung", "Lee Yoo-mi"],
         answer: 0
     },
     {
-        question: "De quelle ville canadienne est-il originaire ?",
-        options: ["Montréal", "Vancouver", "Toronto", "Ottawa"],
+        question: "Quel est le nom de son fidèle chien (un Doberman souvent vu avec lui) ?",
+        options: ["Brutus", "Caesar", "King", "Zeus"],
+        answer: 1
+    },
+    {
+        question: "Quel producteur (connu sous le nom de Zodiac) a co-créé le son originel de The Weeknd avant d'être écarté ?",
+        options: ["Metro Boomin", "Illangelo", "Jeremy Rose", "Doc McKinney"],
         answer: 2
     },
     {
-        question: "Quel est le nom de sa toute première mixtape sortie en 2011 ?",
-        options: ["Thursday", "Echoes of Silence", "Kiss Land", "House of Balloons"],
+        question: "Quel titre mythique d'Elton John est interpolé dans la ballade 'Scared to Live' ?",
+        options: ["Tiny Dancer", "Rocket Man", "Bennie and the Jets", "Your Song"],
         answer: 3
     },
     {
-        question: "Avec quel duo électronique casqué a-t-il collaboré sur 'Starboy' et 'I Feel It Coming' ?",
-        options: ["Justice", "Daft Punk", "The Chemical Brothers", "Disclosure"],
+        question: "Avec quelle popstar féminine détient-il son plus grand nombre de collaborations (4 morceaux en duo) ?",
+        options: ["Lana Del Rey", "Rosalía", "Ariana Grande", "Doja Cat"],
+        answer: 2
+    },
+    {
+        question: "Pourquoi The Weeknd boycotte-t-il officiellement les Grammy Awards depuis 2021 ?",
+        options: ["Un désaccord financier", "L'absence de nominations pour 'After Hours'", "Une dispute avec le présentateur", "Le refus de le laisser chanter en live"],
         answer: 1
     },
     {
-        question: "Dans quel album trouve-t-on le tube mondial 'Blinding Lights' ?",
-        options: ["Beauty Behind the Madness", "Starboy", "After Hours", "Dawn FM"],
+        question: "Quelle esthétique et culture asiatique ont fortement influencé l'univers de l'album 'Kiss Land' ?",
+        options: ["Sud-Coréenne", "Chinoise", "Japonaise", "Thaïlandaise"],
         answer: 2
     },
     {
-        question: "En quelle année a-t-il assuré le show de la mi-temps du Super Bowl ?",
-        options: ["2019", "2020", "2021", "2022"],
-        answer: 2
+        question: "Quel DJ et producteur français d'électro sombre a co-réalisé les titres 'Lost in the Fire' et 'I Was Never There' ?",
+        options: ["DJ Snake", "Kavinsky", "Justice", "Gesaffelstein"],
+        answer: 3
     },
     {
-        question: "Comment s'appelle son label discographique fondé en 2012 ?",
-        options: ["OVO Sound", "XO", "Cactus Jack", "TDE"],
+        question: "Dans le clip de 'Save Your Tears', quel détail physique de The Weeknd a provoqué la stupéfaction du public ?",
+        options: ["Il n'a plus de cheveux", "Il porte de fausses prothèses de chirurgie esthétique", "Il est couvert de tatouages", "Il a des yeux entièrement noirs"],
         answer: 1
     },
     {
-        question: "Pour quel film a-t-il composé et chanté le titre 'Earned It' ?",
-        options: ["Black Panther", "Hunger Games", "Cinquante Nuances de Grey", "James Bond : Spectre"],
+        question: "Comment s'appelle le concept métaphorique de l'album 'Dawn FM', selon The Weeknd lui-même ?",
+        options: ["L'enfer sur Terre", "Un club à la fin de l'univers", "Le purgatoire sous forme de bouchon routier", "Un asile psychiatrique"],
         answer: 2
     },
     {
-        question: "Dans quelle série polémique de HBO a-t-il joué le rôle de Tedros en 2023 ?",
-        options: ["Euphoria", "The Idol", "Succession", "True Detective"],
+        question: "De quelle couleur était le costume signature qu'il a porté tout au long de l'ère 'After Hours' ?",
+        options: ["Noir avec une cravate blanche", "Bleu velours", "Rouge avec une chemise noire", "Blanc immaculé"],
+        answer: 2
+    },
+    {
+        question: "Dans le court-métrage 'Mania', quel animal majestueux et dangereux apparaît à l'écran ?",
+        options: ["Un loup", "Une panthère noire", "Un serpent", "Un aigle"],
         answer: 1
     },
     {
-        question: "Quel acteur célèbre prête sa voix pour faire le narrateur sur l'album 'Dawn FM' ?",
-        options: ["Morgan Freeman", "Samuel L. Jackson", "Jim Carrey", "Denzel Washington"],
-        answer: 2
-    },
-    {
-        question: "Quelle langue, en plus de l'anglais, parle-t-il couramment grâce à ses origines éthiopiennes ?",
-        options: ["Le Swahili", "L'Amharique", "Le Somali", "L'Arabe"],
-        answer: 1
-    },
-    {
-        question: "Quel est le nom du comic book que The Weeknd a co-écrit avec Marvel ?",
-        options: ["The Idol", "After Hours", "Starboy", "Blinding Lights"],
-        answer: 2
-    },
-    {
-        question: "De quel film de Martin Scorsese s'est-il principalement inspiré pour le personnage en costume rouge de l'ère 'After Hours' ?",
-        options: ["Les Affranchis", "Taxi Driver", "Casino", "Le Loup de Wall Street"],
-        answer: 2
-    },
-    {
-        question: "Sur quel morceau de Drake de 2011 peut-on entendre l'une de ses premières collaborations majeures ?",
-        options: ["The Zone", "Crew Love", "Practice", "Shot for Me"],
-        answer: 1
-    },
-    {
-        question: "Avant de s'appeler 'The Weeknd', quel était l'un de ses noms de scène ?",
-        options: ["Abel", "The Noise", "Kin Kane", "Tesfaye"],
-        answer: 2
-    },
-    {
-        question: "Quelle a été la toute première chanson qu'il a mise en ligne sur YouTube sous le nom 'The Weeknd' ?",
-        options: ["What You Need", "Loft Music", "The Morning", "Wicked Games"],
+        question: "Quelle gigantesque structure gonflable trônait au-dessus de la scène lors de la tournée 'After Hours til Dawn' ?",
+        options: ["Une lune", "Un soleil rouge", "Une étoile géante", "Un crâne"],
         answer: 0
     },
     {
-        question: "Quel est le nom de la station de radio fictive qui rythme l'album 'Dawn FM' ?",
-        options: ["XO 103.5", "After Life Radio", "103.5 Dawn FM", "Heaven or Las Vegas"],
-        answer: 2
+        question: "Quel réalisateur connu a tourné le clip en vue subjective (POV) très sanglant de 'False Alarm' ?",
+        options: ["Quentin Tarantino", "Ilya Naishuller", "Edgar Wright", "Michael Bay"],
+        answer: 1
     },
     {
-        question: "Quelle chanson de Michael Jackson a-t-il reprise pour le 30ème anniversaire de l'album 'Bad' ?",
-        options: ["Thriller", "Billie Jean", "Dirty Diana", "Beat It"],
+        question: "Le titre d'ouverture de son EP de 2018 'My Dear Melancholy,' s'appelle...",
+        options: ["Call Out My Name", "Try Me", "Wasted Times", "Hurt You"],
+        answer: 0
+    },
+    {
+        question: "Quel est le nom de scène de son ami d'enfance, devenu son directeur créatif de toujours ?",
+        options: ["Belly", "La Mar Taylor", "Nav", "Cash"],
+        answer: 1
+    },
+    {
+        question: "Quel classique du groupe The Romantics est repris dans la mélodie de 'Secrets' (sur Starboy) ?",
+        options: ["Talking in Your Sleep", "What I Like About You", "Test of Time", "One in a Million"],
+        answer: 0
+    },
+    {
+        question: "Quelle marque de streetwear japonaise célèbre s'est associée à The Weeknd pour une collaboration XO ?",
+        options: ["Supreme", "BAPE (A Bathing Ape)", "Comme des Garçons", "Undercover"],
+        answer: 1
+    },
+    {
+        question: "Quel titre a valu à The Weeknd de remporter son premier Grammy Award en 2016 pour la meilleure performance R&B ?",
+        options: ["Can't Feel My Face", "The Hills", "Earned It", "Starboy"],
         answer: 2
     }
 ];
